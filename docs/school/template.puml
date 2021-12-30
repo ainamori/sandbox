@@ -1,0 +1,44 @@
+@startuml template_info
+map テンプレート中学 {
+!startsub INFO
+  最寄駅 => JR東京
+  通学時間 => 60分
+  学食 => 有り
+  自転車通学 => NG
+  Webサイト => [[http://www.google.com]]
+!endsub INFO
+}
+@enduml
+
+@startuml template_1
+map テンプレート中学_第1回 {
+  偏差値 => 50
+  申込開始 => 2021/11/01
+  申込締切 => 2021/11/30
+  受験日 => 2021/12/01
+  受験科目 => 4教科
+  !includesub template.puml!INFO
+}
+@enduml
+
+@startuml template_2
+map テンプレート中学_第2回 {
+  偏差値 => 50
+  申込開始 => 2021/12/01
+  申込締切 => 2021/12/30
+  受験日 => 2022/01/01
+  受験科目 => 4教科
+  !includesub template.puml!INFO
+}
+@enduml
+
+@startuml template_3
+map テンプレート中学_第3回 {
+  偏差値 => 50
+  申込開始 => 2022/1/01
+  申込締切 => 2022/1/30
+  受験日 => 2022/02/01
+  受験科目 => 4教科
+  !includesub template.puml!INFO
+}
+@enduml

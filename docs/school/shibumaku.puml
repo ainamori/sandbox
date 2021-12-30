@@ -1,0 +1,34 @@
+@startuml shibumaku_info
+map 渋谷幕張 {
+!startsub INFO
+  最寄駅 => JR東京
+  通学時間 => 60分
+  学食 => 有り
+  自転車通学 => NG
+  Webサイト => [[https://www.shibumaku.jp/]]
+!endsub INFO
+}
+@enduml
+
+@startuml shibumaku_1
+map 渋谷幕張_第1回 {
+  偏差値 => 50
+  申込開始 => 2021/11/01
+  申込締切 => 2021/11/30
+  受験日 => 2022/1/22
+  受験科目 => 4教科
+  !includesub shibumaku.puml!INFO
+}
+@enduml
+
+@startuml shibumaku_2
+map 渋谷幕張_第2回 {
+  偏差値 => 50
+  申込開始 => 2021/12/01
+  申込締切 => 2021/12/30
+  受験日 => 2022/02/02
+  受験科目 => 4教科
+  !includesub shibumaku.puml!INFO
+}
+@enduml
+

@@ -1,0 +1,45 @@
+@startuml hiroo_info
+map 広尾学園 {
+!startsub INFO
+  最寄駅 => 日暮里
+  通学時間 => 60分
+  学食 => 有り
+  自転車通学 => NG
+  Webサイト => [[https://kaiseigakuen.jp/]]
+!endsub INFO
+}
+@enduml
+
+
+@startuml hiroo_1
+map 広尾学園_第1回 {
+  偏差値 => 50
+  申込開始 => 2021/11/01
+  申込締切 => 2021/11/30
+  受験日 => 2022/02/01
+  受験科目 => 4教科
+  !includesub hiroo.puml!INFO
+}
+@enduml
+
+@startuml hiroo_2
+map 広尾学園_第2回 {
+  偏差値 => 50
+  申込開始 => 2021/11/01
+  申込締切 => 2021/11/30
+  受験日 => 2022/02/01
+  受験科目 => 4教科
+  !includesub hiroo.puml!INFO
+}
+@enduml
+
+@startuml hiroo_3
+map 広尾学園_第3回 {
+  偏差値 => 50
+  申込開始 => 2021/11/01
+  申込締切 => 2021/11/30
+  受験日 => 2022/02/05
+  受験科目 => 4教科
+  !includesub hiroo.puml!INFO
+}
+@enduml

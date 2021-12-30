@@ -1,20 +1,23 @@
 @startuml azabugakuen_info
+map 麻布学園 {
 !startsub INFO
   最寄駅 => 白金高輪
   通学時間 => 60分
   学食 => 有り
   自転車通学 => NG
-  学校形態 => 男子校
+  Webサイト => [[https://www.azabu-jh.ed.jp/]]
 !endsub INFO
+}
 @enduml
 
 
-@startuml azabugakuen_test
-map 麻布学園 {
+@startuml azabugakuen_1
+map 麻布学園_第1回 {
+  偏差値 => 50
   申込開始 => 2021/11/01
   申込締切 => 2021/11/30
   受験日 => 2022/02/01
-  偏差値 => 65
+  受験科目 => 4教科
   !includesub azabu.puml!INFO
 }
 @enduml

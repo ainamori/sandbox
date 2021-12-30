@@ -1,22 +1,69 @@
 @startuml main_chart
 
-frame "2022/02/01" {
-  !include sample.puml
+frame "2021/12/01" {
+  !include school/template.puml!1
+}
+
+
+frame "2022/01/01" {
+  !include school/template.puml!2
+}
+
+frame "2022/01/22" {
+  !include school/shibumaku.puml!1
+}
+
+
+frame "2022/02/01 午前" {
+  !include school/template.puml!3
+  !include school/kaisei.puml!1
+  !include school/azabu.puml!1
+  !include school/hongou.puml!1
+  !include school/hiroo.puml!1
+}
+
+frame "2022/02/01 午後" {
+  !include school/hiroo.puml!2
 }
 
 frame "2022/02/02" {
-  !include azabu.puml!1
-  !include kaijo.puml!1
+  !include school/shibumaku.puml!2
+  !include school/hongou.puml!2
 }
 
 frame "2022/02/03" {
-  !include kaijo.puml!2
+  !include school/tsukukoma.puml!1
+  !include school/keiou.puml!1
 }
 
+frame "2022/02/05" {
+  !include school/hiroo.puml!3
+  !include school/hongou.puml!3
+}
 
-1月受験校 --|> 麻布学園 : 合格
-1月受験校 --|> 海城中学_1 : 不合格
+テンプレート中学_第1回 --|> 渋谷幕張_第1回 : 合格
+テンプレート中学_第1回 --> テンプレート中学_第2回 : 不合格
 
-海城中学_1 --|> 海城中学_2 : 不合格
+テンプレート中学_第2回 --|> 渋谷幕張_第1回 : 合格
+テンプレート中学_第2回 --> テンプレート中学_第3回 : 不合格
 
+
+渋谷幕張_第1回  --|> 開成中学_第1回: 合格
+渋谷幕張_第1回  --> 麻布学園_第1回: 不合格
+
+開成中学_第1回 --|> 筑波大駒場_第1回: 合格
+開成中学_第1回 --> 慶応中等部_第1回: 不合格
+開成中学_第1回 -> 広尾学園_第2回
+
+麻布学園_第1回 --|> 筑波大駒場_第1回: 合格
+麻布学園_第1回 --> 本郷中学_第2回: 不合格
+
+広尾学園_第2回 --|> 渋谷幕張_第2回: 合格
+広尾学園_第2回 --> 広尾学園_第3回: 不合格
+
+慶応中等部_第1回 --|> 本郷中学_第3回: 合格
+慶応中等部_第1回 --> 広尾学園_第3回: 不合格
+
+渋谷幕張_第2回 --> 本郷中学_第3回: 不合格
+本郷中学_第2回 --> 本郷中学_第3回: 不合格
 @enduml

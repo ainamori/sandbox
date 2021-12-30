@@ -1,0 +1,45 @@
+@startuml hongou_info
+map 本郷中学 {
+!startsub INFO
+  最寄駅 => 日暮里
+  通学時間 => 60分
+  学食 => 有り
+  自転車通学 => NG
+  Webサイト => [[https://kaiseigakuen.jp/]]
+!endsub INFO
+}
+@enduml
+
+
+@startuml hongou_1
+map 本郷中学_第1回 {
+  偏差値 => 50
+  申込開始 => 2021/11/01
+  申込締切 => 2021/11/30
+  受験日 => 2022/02/01
+  受験科目 => 4教科
+  !includesub hongou.puml!INFO
+}
+@enduml
+
+@startuml hongou_2
+map 本郷中学_第2回 {
+  偏差値 => 50
+  申込開始 => 2021/11/01
+  申込締切 => 2021/11/30
+  受験日 => 2022/02/02
+  受験科目 => 4教科
+  !includesub hongou.puml!INFO
+}
+@enduml
+
+@startuml hongou_3
+map 本郷中学_第3回 {
+  偏差値 => 50
+  申込開始 => 2021/11/01
+  申込締切 => 2021/11/30
+  受験日 => 2022/02/04
+  受験科目 => 4教科
+  !includesub hongou.puml!INFO
+}
+@enduml

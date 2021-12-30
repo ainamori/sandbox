@@ -1,0 +1,21 @@
+@startuml tsukukoma_info
+map 筑波大駒場 {
+!startsub INFO
+  最寄駅 => JR東京
+  通学時間 => 60分
+  学食 => 有り
+  自転車通学 => NG
+  Webサイト => [[http://www.google.com]]
+!endsub INFO
+}
+@enduml
+
+@startuml tsukukoma_1
+map 筑波大駒場_第1回 {
+  申込開始 => 2021/11/01
+  申込締切 => 2021/11/30
+  受験日 => 2022/02/03
+  偏差値 => 65
+  !includesub tsukukoma.puml!INFO
+}
+@enduml
