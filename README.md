@@ -2,7 +2,7 @@
 
 ## フローチャート
 
-![フローチャート図](./main_chart.svg)
+[フローチャート図](https://ainamori.github.io/sandbox/)
 
 ## 当repoの使い方
 
