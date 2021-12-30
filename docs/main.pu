@@ -1,0 +1,21 @@
+@startuml
+
+frame "2022/02/01" {
+  !include sample.puml!0
+}
+
+frame "2022/02/02" {
+  !include azabu.puml!1
+  !include kaijo.puml!1
+}
+
+frame "2022/02/03" {
+  !include kaijo.puml!2
+}
+
+1月受験校 --|> 麻布学園 : 合格
+1月受験校 --|> 海城中学_1 : 不合格
+
+海城中学_1 --|> 海城中学_2 : 不合格
+
+@enduml
