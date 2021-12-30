@@ -9,17 +9,14 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: UML files considered echo output
-        run: |
-          echo ${{ steps.getfile.outputs.files }}
       - name: Generate SVG Diagrams
         uses: cloudbees/plantuml-github-action@master
         with:
-            args: -v -tsvg ${{ steps.getfile.outputs.files }}
+            args: -v -tsvg ./plantuml -o docs
       - name: Generate PNG Diagrams
         uses: cloudbees/plantuml-github-action@master
         with:
-            args: -v -tpng ${{ steps.getfile.outputs.files }}
+            args: -v -tpng ./plantuml -o docs
       - name: Commit changes
         uses: EndBug/add-and-commit@v5
         with:
