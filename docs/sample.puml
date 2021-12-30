@@ -1,4 +1,4 @@
-@startuml
+@startuml jan_school
 
 map 1月受験校 {
   申込開始 => 2021/11/01

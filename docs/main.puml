@@ -1,4 +1,4 @@
-@startuml
+@startuml main_chart
 
 frame "2022/02/01" {
   !include sample.puml
