@@ -16,10 +16,10 @@ jobs:
         uses: holowinski/plantuml-github-action@main
         with:
           args: -v -tsvg docs/*.puml
-      - name: Generate PNG Diagrams
-        uses: holowinski/plantuml-github-action@main
-        with:
-          args: -v -tpng docs/*.puml
+      # - name: Generate PNG Diagrams
+      #   uses: holowinski/plantuml-github-action@main
+      #   with:
+      #     args: -v -tpng docs/*.puml
       - name: Commit changes
         uses: EndBug/add-and-commit@v5
         with:
